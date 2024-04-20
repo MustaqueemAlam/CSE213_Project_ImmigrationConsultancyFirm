@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="749.0" style="-fx-background-color: linear-gradient(to bottom, #3314cd, #bc310e);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_04_ViewPolicyFeedBacksController">
+   <children>
+      <TableView fx:id="feedbackTableView" layoutX="38.0" layoutY="110.0" prefHeight="410.0" prefWidth="673.0">
+         <columns>
+            <TableColumn fx:id="feedbackTypeColumn" minWidth="0.0" prefWidth="126.0" text="Feedback Type" />
+            <TableColumn fx:id="nameColumn" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="emailColumn" minWidth="0.0" prefWidth="188.0" text="Email" />
+            <TableColumn fx:id="feedbackColumn" prefWidth="238.0" text="feedbacks" />
+         </columns>
+      </TableView>
+      <Label layoutX="38.0" layoutY="62.0" text="View User Feedbacks" textFill="WHITE">
+         <font>
+            <Font name="Segoe Script Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

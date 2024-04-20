@@ -1,0 +1,16 @@
+Invoice generated on: 2023-08-09 14:17:20
+
+Bill Summary
+
+Name: SAQ
+Phone Number: 012332332222
+City: CTG
+
+Due Date: 2023-08-04
+
+Service Type: Case Management Fee (  Quantity:  3)
+
+Rate: 2000.0
+Gross Total: 6300.0
+
+Total Payable: 6300.0 BDT

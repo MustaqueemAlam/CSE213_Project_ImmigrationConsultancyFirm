@@ -1,0 +1,16 @@
+Invoice generated on: 2023-08-11 17:25:20
+
+Bill Summary
+
+Name: Tasa
+Phone Number: 01690786776
+City: Sylhet
+
+Due Date: 2023-08-23
+
+Service Type: Filing Fees (  Quantity:  1)
+
+Rate: 300.0
+Gross Total: 300.0
+
+Total Payable: 300.0 BDT

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_05_MainDashboardController">
+   <top>
+      <MenuBar prefHeight="6.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Tasks">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#SubmitImmigrationApplicationOnClick" text="Submit Immigration Application" />
+                  <MenuItem mnemonicParsing="false" onAction="#courseOnClick" text="Chose courses" />
+                  <MenuItem mnemonicParsing="false" onAction="#consultancyOnClick" text="Consultancy hours" />
+                  <MenuItem mnemonicParsing="false" onAction="#ViewpolicyOnClick" text="View Terms and policy &amp; send feedback" />
+                  <MenuItem mnemonicParsing="false" onAction="#universityOnClick" text="Recomendations of university for applications" />
+                  <MenuItem mnemonicParsing="false" onAction="#requestForAttorneyOnClick" text="Request For Attorney" />
+                  <MenuItem mnemonicParsing="false" onAction="#reviewOnClick" text="Review" />
+                  <MenuItem mnemonicParsing="false" onAction="#uploaddocumentOnClick" text="Upload Document" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Nevigator">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#navigateToDashboard" text="Back" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <ButtonBar prefHeight="31.0" prefWidth="770.0" style="-fx-background-color: Lavender;" BorderPane.alignment="CENTER">
+        <buttons>
+            <Label fx:id="userName" prefHeight="17.0" prefWidth="141.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="clockLabel" prefHeight="17.0" prefWidth="294.0" text="Clock">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+          <Button fx:id="logout" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="92.0" text="Logout">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

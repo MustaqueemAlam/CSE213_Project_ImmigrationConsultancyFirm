@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="734.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_05_ConsultancyHoursController">
+   <children>
+      <ImageView fitHeight="525.0" fitWidth="735.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Background_Image/original-167de6961ce1d4b5cc33f3592d94c30b.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="consultantComboBox" layoutX="55.0" layoutY="86.0" prefWidth="150.0" promptText="Select Consultant" />
+      <Label layoutX="104.0" layoutY="33.0" prefHeight="30.0" prefWidth="510.0" text="Get Free Consultation Hours with the Best Advisors">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="phoneTextField" layoutX="437.0" layoutY="80.0" prefHeight="25.0" prefWidth="177.0" promptText="phone no..." />
+      <Button layoutX="208.0" layoutY="224.0" mnemonicParsing="false" onAction="#confirmButtonOnClick" prefHeight="30.0" prefWidth="224.0" text="Confirm">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Button fx:id="Back" layoutX="263.0" layoutY="435.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="25.0" prefWidth="104.0" text="Back" />
+      <TextField fx:id="nameTextField" layoutX="437.0" layoutY="124.0" prefHeight="25.0" prefWidth="177.0" promptText="Full Name.." />
+      <ComboBox fx:id="selecttimeComboBox" layoutX="55.0" layoutY="137.0" prefWidth="150.0" promptText="Select Timing" />
+      <TableView fx:id="tableview" layoutX="144.0" layoutY="279.0" prefHeight="136.0" prefWidth="382.0">
+        <columns>
+          <TableColumn fx:id="consultantnameTableColumn" prefWidth="128.0" text="Teacher name" />
+          <TableColumn fx:id="studentnameTableColumn" prefWidth="150.0" text="Student name" />
+            <TableColumn fx:id="timingTableColumn" prefWidth="103.0" text="Timing" />
+        </columns>
+      </TableView>
+      <Line endX="619.0" layoutX="115.0" layoutY="200.0" startX="-115.0" />
+      <Line endX="-28.5" endY="75.5" layoutX="343.0" layoutY="124.0" startX="-28.5" startY="-53.0" />
+   </children>
+</AnchorPane>

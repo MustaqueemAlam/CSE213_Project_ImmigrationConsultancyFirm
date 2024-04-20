@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="523.0" prefWidth="478.0" style="-fx-background-color: linear-gradient(to bottom, #FFD700, #bc310e);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_03_ViewPayrollProcessingReportsController">
+
+    <TableView fx:id="payrollTableView" layoutX="6.0" layoutY="56.0" prefHeight="78.0" prefWidth="470.0" style="-fx-background-color: #FFD700;">
+        <columns>
+            <TableColumn fx:id="designationColumn" prefWidth="246.0" text="Designation" />
+            <TableColumn fx:id="overtimeHoursColumn" prefWidth="223.0" text="Overtime Hours" />
+        </columns>
+    </TableView>
+
+    <PieChart fx:id="overtimeHoursPieChart" layoutX="6.0" layoutY="147.0" legendSide="TOP" prefHeight="241.0" prefWidth="241.0" style="-fx-background-color: #FFD700;" title="Over Time Data Analysis" titleSide="BOTTOM" />
+
+    <ComboBox fx:id="designationComboBox" layoutX="19.0" layoutY="431.0" prefHeight="25.0" prefWidth="265.0" style="-fx-background-color: #FFD700;" />
+    
+    <Label layoutX="12.0" layoutY="10.0" prefHeight="34.0" prefWidth="248.0" text="Over Time Statistics" textFill="RED" underline="true">
+        <font>
+            <Font name="Gabriola" size="38.0" />
+        </font>
+    </Label>
+
+    <Button layoutX="19.0" layoutY="466.0" mnemonicParsing="false" onAction="#generateReportandLoadDataOnTableview" prefHeight="33.0" prefWidth="121.0" style="-fx-background-color: #4CAF50; -fx-text-fill: #ffffff;" text="Check Statistics">
+        <font>
+            <Font name="SansSerif Bold Italic" size="13.0" />
+        </font>
+    </Button>
+
+    <Label layoutX="19.0" layoutY="411.0" text="Choose designation" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+
+    <BarChart fx:id="barchart" layoutX="235.0" layoutY="147.0" prefHeight="227.0" prefWidth="241.0">
+        <xAxis>
+            <CategoryAxis prefHeight="0.0" prefWidth="223.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" />
+        </yAxis>
+    </BarChart>
+
+</AnchorPane>

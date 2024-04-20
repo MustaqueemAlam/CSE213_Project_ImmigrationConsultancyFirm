@@ -1,0 +1,16 @@
+Invoice generated on: 2023-08-10 21:07:07
+
+Bill Summary
+
+Name: zaz
+Phone Number: 01977666666
+City: Dhaka
+
+Due Date: 2023-08-09
+
+Service Type: Document Preparation Fee (  Quantity:  1)
+
+Rate: 750.0
+Gross Total: 787.5
+
+Total Payable: 787.5 BDT

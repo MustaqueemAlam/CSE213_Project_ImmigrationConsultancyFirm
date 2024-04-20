@@ -1,0 +1,21 @@
+Invoice generated on: 2023-08-25 23:45:16
+
+Bill Summary
+
+Name: mohsin
+Phone Number: 01977554447
+City: Dhaka
+
+Due Date: 2023-08-31
+
+Service Type: Document Preparation Fee (  Quantity:  1)
+
+Rate: 750.0
+Gross Total: 787.5
+
+Service Type: Translation Services (  Quantity:  1)
+
+Rate: 1200.0
+Gross Total: 1212.0
+
+Total Payable: 1999.5 BDT

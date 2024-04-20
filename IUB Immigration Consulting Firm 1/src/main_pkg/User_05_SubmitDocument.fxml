@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_05_SubmitDocumentController">
+   <children>
+      <Label layoutX="127.0" layoutY="29.0" prefHeight="30.0" prefWidth="334.0" text="Upload SSC,HSC certificate Image" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="318.0" layoutX="279.0" layoutY="59.0" startX="-276.0" />
+      <Line endX="27.0" endY="238.0" layoutX="269.0" layoutY="131.0" startX="27.0" startY="-70.5" />
+      <Label layoutX="127.0" layoutY="70.0" prefHeight="17.0" prefWidth="107.0" text="SSC Certificate" />
+      <Label layoutX="387.0" layoutY="70.0" prefHeight="17.0" prefWidth="107.0" text="HSC Certificate" />
+      <Line endX="-279.0" endY="238.0" layoutX="279.0" layoutY="141.0" startX="321.0" startY="238.0" />
+      <MenuBar layoutX="3.0" layoutY="4.0" prefHeight="25.0" prefWidth="595.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Choese File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#sscfileOnClick" text="SSC" />
+                  <MenuItem mnemonicParsing="false" onAction="#hscfileOnClick" text="HSC" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="sscImageView" fitHeight="150.0" fitWidth="200.0" layoutX="53.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="hscImageView" fitHeight="150.0" fitWidth="200.0" layoutX="341.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

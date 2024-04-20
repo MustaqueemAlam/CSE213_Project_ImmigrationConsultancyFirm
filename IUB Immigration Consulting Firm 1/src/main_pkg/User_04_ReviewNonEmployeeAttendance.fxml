@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to bottom, #3314cd, #bc310e);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_04_ReviewNonEmployeeAttendanceController">
+   <children>
+      <Label layoutX="53.0" layoutY="37.0" prefHeight="47.0" prefWidth="322.0" text="Review non employee attendance" textFill="#ddff00">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="19.0" layoutY="135.0" prefHeight="289.0" prefWidth="716.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="113.0" text="Name" />
+            <TableColumn fx:id="contactCol" prefWidth="116.0" text="Contact" />
+            <TableColumn fx:id="professionCol" prefWidth="128.0" text="Profession" />
+          <TableColumn fx:id="reasonForVisitCol" prefWidth="140.0" text="Reason for visit" />
+            <TableColumn fx:id="dateCol" minWidth="0.0" prefWidth="112.0" text="Date" />
+            <TableColumn fx:id="checkinCol" prefWidth="104.0" text="Check in" />
+        </columns>
+      </TableView>
+      <Button layoutX="565.0" layoutY="96.0" mnemonicParsing="false" onAction="#loanButtonOnClick" prefHeight="25.0" prefWidth="145.0" text="Load" textFill="#1a48ff">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="date" layoutX="382.0" layoutY="96.0" prefHeight="29.0" prefWidth="174.0" />
+      <Label layoutX="286.0" layoutY="102.0" prefHeight="17.0" prefWidth="81.0" text="Select a date:" textFill="#fff412" />
+      <Button layoutX="53.0" layoutY="450.0" mnemonicParsing="false" onAction="#saveAsPDFonCLick" prefHeight="25.0" prefWidth="657.0" text="Save as PDF" textFill="#ff0202">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

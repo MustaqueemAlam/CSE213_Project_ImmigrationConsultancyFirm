@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="750.0" style="-fx-border-color: white; -fx-background-color: #3498db;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.UserLoginController">
+   <children>
+      <BorderPane layoutX="50.0" layoutY="78.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <AnchorPane prefHeight="578.0" prefWidth="372.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="userIdTextField" layoutX="141.0" layoutY="298.0" opacity="0.65" prefHeight="31.0" prefWidth="196.0">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="passwordTextField" layoutX="141.0" layoutY="336.0" opacity="0.65" prefHeight="31.0" prefWidth="196.0">
+                     <effect>
+                        <ColorAdjust />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="userTypeComboBox" layoutX="21.0" layoutY="240.0" prefHeight="49.0" prefWidth="318.0" promptText="Select User Type" style="-fx-background-color: #3498db;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <Button fx:id="signupButton" layoutX="65.0" layoutY="517.0" mnemonicParsing="false" onAction="#signUpButtonOnClick" opacity="0.75" prefHeight="27.0" prefWidth="231.0" style="-fx-background-color: #3498db;" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Sitka Banner Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="118.0" layoutY="490.0" prefHeight="27.0" prefWidth="136.0" text="Don't have an account?" textFill="#c6ff0c">
+                     <font>
+                        <Font name="Gadugi Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="login" layoutX="25.0" layoutY="399.0" mnemonicParsing="false" onAction="#loginButtonOnClick" opacity="0.75" prefHeight="49.0" prefWidth="310.0" text="Sign In" textFill="#1d1797">
+                     <font>
+                        <Font name="Impact" size="25.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="217.0" layoutY="374.0" mnemonicParsing="false" onAction="#forgotPasswordButtonOnClick" opacity="0.54" prefHeight="16.0" prefWidth="120.0" style="-fx-background-color: black;" text="Forgot Passwod?" textFill="#c6ff0c">
+                     <font>
+                        <Font name="Gadugi Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label layoutX="21.0" layoutY="302.0" prefHeight="20.0" prefWidth="120.0" text="User ID:" textFill="WHITE">
+                     <font>
+                        <Font name="Monospaced Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="340.0" prefHeight="20.0" prefWidth="120.0" text="Password:" textFill="WHITE">
+                     <font>
+                        <Font name="Monospaced Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="175.0" fitWidth="337.0" layoutX="41.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../dashboards/welcome.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </right>
+         <left>
+            <AnchorPane prefHeight="578.0" prefWidth="292.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="clockLabel" layoutX="14.0" layoutY="21.0" prefHeight="31.0" prefWidth="358.0" text="Clock:">
+                     <font>
+                        <Font name="Serif Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="back" layoutX="29.0" layoutY="523.0" mnemonicParsing="false" onAction="#backonClick" prefHeight="32.0" prefWidth="184.0" style="-fx-background-radius: 88;" text="Return Home ">
+                     <font>
+                        <Font name="Sitka Small Bold" size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="291.0" fitWidth="299.0" layoutX="40.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../dashboards/immigrants-are-essential-workers-immigrants-are-essential.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

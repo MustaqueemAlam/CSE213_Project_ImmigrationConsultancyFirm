@@ -1,0 +1,21 @@
+Invoice generated on: 2023-08-10 23:12:51
+
+Bill Summary
+
+Name: ehnam
+Phone Number: 01988666555
+City: CTG
+
+Due Date: 2023-08-17
+
+Service Type: Document Preparation Fee (  Quantity:  1)
+
+Rate: 750.0
+Gross Total: 787.5
+
+Service Type: Notary Fees (  Quantity:  1)
+
+Rate: 500.0
+Gross Total: 525.0
+
+Total Payable: 1312.5 BDT

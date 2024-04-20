@@ -1,0 +1,16 @@
+Invoice generated on: 2023-08-09 14:44:13
+
+Bill Summary
+
+Name: sayem
+Phone Number: 019776664444
+City: Dhaka
+
+Due Date: 2023-08-11
+
+Service Type: Application Processing Fee (  Quantity:  1)
+
+Rate: 1200.0
+Gross Total: 1236.0
+
+Total Payable: 1236.0 BDT

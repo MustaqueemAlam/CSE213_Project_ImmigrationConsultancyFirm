@@ -1,0 +1,21 @@
+Invoice generated on: 2023-08-26 02:00:30
+
+Bill Summary
+
+Name: Adel
+Phone Number: 01988774445
+City: Cumilla
+
+Due Date: 2023-08-26
+
+Service Type: Document Preparation Fee (  Quantity:  1)
+
+Rate: 750.0
+Gross Total: 787.5
+
+Service Type: Case Management Fee (  Quantity:  1)
+
+Rate: 2000.0
+Gross Total: 2100.0
+
+Total Payable: 2887.5 BDT

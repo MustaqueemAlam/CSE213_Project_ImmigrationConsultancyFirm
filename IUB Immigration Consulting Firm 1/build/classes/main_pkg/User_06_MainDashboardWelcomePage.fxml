@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="770.0" style="-fx-background-color: black; -fx-background-position: center;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_06_MainDashboardWelcomePageController">
+   <children>
+      <ImageView fitHeight="519.0" fitWidth="765.0" layoutX="3.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Background_Image/56656.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="70.0" prefHeight="31.0" prefWidth="364.0" text="Welcome To The Consultant Dashboard" textFill="RED" underline="true">
+         <font>
+            <Font name="Lucida Sans Unicode" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="357.0" prefHeight="33.0" prefWidth="656.0" text="&quot;Empowering Insights, Guiding Success: Your Journey as a Consultant Begins Here.&quot;" textFill="#ff2f2f">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="425.0" prefHeight="31.0" prefWidth="296.0" text="Contact Us For any Queries" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="456.0" prefHeight="31.0" prefWidth="398.0" text="Email: consultancyEliteImmFirm@gmail.com" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="456.0" prefHeight="31.0" prefWidth="296.0" text="Phone:+02 8889903(Tel)" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+Invoice generated on: 2023-08-10 22:50:18
+
+Bill Summary
+
+Name: 5etr5
+Phone Number: 01333333333
+City: CTG
+
+Due Date: 2023-08-17
+
+Service Type: Case Management Fee (  Quantity:  2)
+
+Rate: 2000.0
+Gross Total: 4200.0
+
+Total Payable: 4200.0 BDT

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="734.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_05_AssignmentController">
+   <children>
+      <VBox layoutX="14.0" layoutY="91.0" prefHeight="262.0" prefWidth="70.0" style="-fx-border-color: Blue;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="98.0" text="GRE " />
+            <Button layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#ieltsButtonOnClick" prefHeight="51.0" prefWidth="98.0" text="IELTS " />
+            <Button layoutX="11.0" layoutY="62.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="98.0" text="TOEFL " />
+            <Button layoutX="11.0" layoutY="113.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="98.0" text="GMAT " />
+            <Button layoutX="11.0" layoutY="164.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="98.0" text="SAT " />
+         </children>
+      </VBox>
+      <Line endX="477.0" layoutX="123.0" layoutY="53.0" startX="-123.0" />
+      <Label layoutX="242.0" layoutY="21.0" prefHeight="24.0" prefWidth="125.0" text="Assignments">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="answerLabel" layoutX="118.0" layoutY="98.0" prefHeight="247.0" prefWidth="162.0" style="-fx-background-color: White;" />
+      <Line endX="172.25" endY="376.0" layoutX="133.0" layoutY="63.0" startX="172.25" startY="-2.0" />
+      <Line endX="172.25" endY="391.0" layoutX="-81.0" layoutY="54.0" startX="172.25" startY="-2.0" />
+      <Label layoutX="166.0" layoutY="61.0" prefHeight="24.0" prefWidth="125.0" text="Answers">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="questionTextArea" layoutX="330.0" layoutY="100.0" prefHeight="335.0" prefWidth="233.0" style="-fx-border-color: Black;" />
+      <Label layoutX="418.0" layoutY="61.0" prefHeight="24.0" prefWidth="125.0" text="Questions">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="144.0" layoutY="353.0" mnemonicParsing="false" onAction="#UploadFileAnswerButtonOnClick" prefHeight="51.0" prefWidth="110.0" style="-fx-border-color: Black;" text="Upload Answer" />
+   </children>
+</AnchorPane>

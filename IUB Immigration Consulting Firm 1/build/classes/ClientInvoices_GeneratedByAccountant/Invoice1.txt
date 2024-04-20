@@ -1,0 +1,16 @@
+Invoice generated on: 2023-08-10 22:45:48
+
+Bill Summary
+
+Name: y
+Phone Number: 01333333333
+City: CTG
+
+Due Date: 2023-08-02
+
+Service Type: Application Processing Fee (  Quantity:  2)
+
+Rate: 1200.0
+Gross Total: 2472.0
+
+Total Payable: 2472.0 BDT

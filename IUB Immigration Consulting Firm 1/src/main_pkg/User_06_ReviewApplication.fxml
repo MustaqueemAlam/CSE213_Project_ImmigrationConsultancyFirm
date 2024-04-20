@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="734.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_06_ReviewApplicationController">
+   <children>
+      <PieChart fx:id="pieChart" layoutX="344.0" layoutY="84.0" prefHeight="172.0" prefWidth="270.0" style="-fx-border-color: Black;" />
+      <VBox layoutX="30.0" layoutY="101.0" prefHeight="259.0" prefWidth="100.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#countryratioButtonOnClick" prefHeight="90.0" prefWidth="100.0" text="Country Ratio">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#genderButtonOnClick" prefHeight="86.0" prefWidth="100.0" text="Gender Ratio">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#displayTableButtonOnclick" prefHeight="86.0" prefWidth="100.0" text="Dispaly Table">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="437.0" layoutY="263.0" prefHeight="17.0" prefWidth="169.0" text="Pie-Chart">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="214.0" layoutY="23.0" prefHeight="27.0" prefWidth="294.0" text="Data Analyzing From The Form">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="422.0" prefHeight="17.0" prefWidth="218.0" text="#  Make Decision From The Data" textFill="#e41616">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="457.0" prefHeight="17.0" prefWidth="218.0" text="#  Make Decision From The Data" textFill="#d00404">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Line endX="414.0" endY="6.0" layoutX="320.0" layoutY="55.0" startX="-318.0" startY="6.0" />
+      <TableView fx:id="tableView" layoutX="332.0" layoutY="320.0" prefHeight="172.0" prefWidth="337.0" style="-fx-border-color: Black;">
+        <columns>
+          <TableColumn fx:id="countryColumn" prefWidth="139.0" text="Country Name" />
+          <TableColumn fx:id="maleColumn" prefWidth="98.0" text="Male" />
+            <TableColumn fx:id="femaleColumn" prefWidth="99.0" text="Female" />
+        </columns>
+      </TableView>
+      <Line endX="-34.0" endY="454.0" layoutX="330.0" layoutY="65.0" startX="-41.0" startY="-3.5" />
+   </children>
+</AnchorPane>

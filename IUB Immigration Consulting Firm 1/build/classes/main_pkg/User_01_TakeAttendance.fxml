@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="608.0" style="-fx-background-color: Aqua;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_01_TakeAttendanceController">
+   <children>
+      <Button layoutX="372.0" layoutY="71.0" mnemonicParsing="false" onAction="#submitButtonOnClick" prefHeight="67.0" prefWidth="118.0" text="Add" />
+      <Button layoutX="105.0" layoutY="413.0" mnemonicParsing="false" onAction="#createButtonOnClick" prefHeight="36.0" prefWidth="176.0" text="Create" />
+      <Label layoutX="104.0" layoutY="388.0" prefHeight="25.0" prefWidth="302.0" text="Click Create Button to create file of the attendance report" wrapText="true">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+      <ComboBox fx:id="postComboBox" layoutX="180.0" layoutY="72.0" prefWidth="150.0" promptText="Select an Option" />
+      <ComboBox fx:id="nameComboBox" layoutX="180.0" layoutY="112.0" prefWidth="150.0" promptText="Select an Option" />
+      <Label layoutX="125.0" layoutY="75.0" text="Post:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="115.0" text="Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="105.0" layoutY="165.0" prefHeight="200.0" prefWidth="398.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="135.0" text="Name" />
+          <TableColumn fx:id="postCol" prefWidth="106.0" text="Post" />
+            <TableColumn fx:id="TimeCol" prefWidth="156.0" text="Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="163.0" prefHeight="51.0" prefWidth="282.0" text="Record Attendance">
+         <font>
+            <Font name="Segoe Script Bold" size="27.0" />
+         </font>
+      </Label>
+      <Line endX="263.0" layoutX="299.0" layoutY="51.0" startX="-254.0" strokeWidth="2.3" />
+      <Button layoutX="304.0" layoutY="413.0" mnemonicParsing="false" onAction="#saveAsPDF" prefHeight="36.0" prefWidth="203.0" text="Save as PDF" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+Invoice generated on: 2023-08-10 23:09:56
+
+Bill Summary
+
+Name: saadd
+Phone Number: 01866666666
+City: CTG
+
+Due Date: 2023-08-23
+
+Service Type: Application Processing Fee (  Quantity:  1)
+
+Rate: 1200.0
+Gross Total: 1236.0
+
+Service Type: Application Processing Fee (  Quantity:  2)
+
+Rate: 1200.0
+Gross Total: 2472.0
+
+Service Type: Document Preparation Fee (  Quantity:  1)
+
+Rate: 750.0
+Gross Total: 787.5
+
+Total Payable: 4495.5 BDT

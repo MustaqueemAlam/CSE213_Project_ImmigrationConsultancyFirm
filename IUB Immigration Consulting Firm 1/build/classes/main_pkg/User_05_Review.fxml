@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_05_ReviewController">
+   <ImageView fitHeight="508.0" fitWidth="734.0" layoutX="-3.0" layoutY="1.0" pickOnBounds="true">
+      <image>
+         <Image url="@../Background_Image/360_F_285889235_4OdZaoyEhH7D1ZBAGrBNsOJrHUHLtM9o.jpg" />
+      </image>
+   </ImageView>
+    <VBox alignment="CENTER" layoutX="196.0" layoutY="14.0" prefHeight="461.0" prefWidth="378.0" spacing="20.0" style="-fx-background-color: Pink;">
+      <Label prefHeight="35.0" prefWidth="180.0" text="   REVIEW" textFill="#a10404">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+        <Label text="Client Name:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TextField fx:id="clientNameField" />
+        <Label text="Session Date:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TextField fx:id="sessionDateField" />
+        <Label prefHeight="17.0" prefWidth="106.0" text="Rating(Out of 5):">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TextField fx:id="ratingField" />
+        <Label text="Comments:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+        <TextArea fx:id="commentsArea" prefHeight="100.0" prefWidth="300.0" />
+        <Button fx:id="submitButton" onAction="#submitButtonOnClick" prefHeight="45.0" prefWidth="376.0" text="Submit" />
+    </VBox>
+   <Button fx:id="back" layoutX="50.0" layoutY="440.0" mnemonicParsing="false" onAction="#backButtonOnClick" text="Back" />
+</AnchorPane>

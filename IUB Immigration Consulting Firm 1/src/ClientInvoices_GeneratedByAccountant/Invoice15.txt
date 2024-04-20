@@ -1,0 +1,16 @@
+Invoice generated on: 2023-08-10 23:09:06
+
+Bill Summary
+
+Name: eee
+Phone Number: 01233333333
+City: Cumilla
+
+Due Date: 2023-08-16
+
+Service Type: Translation Services (  Quantity:  2)
+
+Rate: 1200.0
+Gross Total: 2424.0
+
+Total Payable: 2424.0 BDT

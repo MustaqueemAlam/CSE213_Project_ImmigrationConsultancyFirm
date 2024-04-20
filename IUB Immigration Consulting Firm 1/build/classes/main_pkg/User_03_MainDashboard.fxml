@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="750.0" stylesheets="@styles/dashboard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_03_MainDashboardController">
+
+    <!-- Top MenuBar -->
+    <top>
+        <MenuBar prefHeight="0.0" prefWidth="750.0" style="-fx-background-color: #16436e;" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" style="-fx-background-color: silver;" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#overtimeDataAnalysisFromPayrollMenuBarButtonOnClick" text="Overtime Payment" />
+                        <MenuItem mnemonicParsing="false" onAction="#termsAndPolicyMenuBarButtonOnClick" text="Terms And Policy" />
+                        <MenuItem mnemonicParsing="false" onAction="#reimbursementReportsenuBarButtonOnClick" text="Reimbursement Requests" />
+                        <MenuItem mnemonicParsing="false" onAction="#trackAddWorkHrsMenuBarButtonOnClick" text="Overtime Records" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" style="-fx-background-color: silver;" text="Navigator">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#navigateToDashboard" text="Back" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <!-- Left VBox -->
+    <left>
+        <VBox prefHeight="553.0" prefWidth="275.0" style="-fx-background-color: #16436e; -fx-border-color: red;" BorderPane.alignment="CENTER">
+            <children>
+                <!-- Header HBox -->
+                <HBox prefHeight="80.0" prefWidth="168.0">
+                    <children>
+                        <Label prefHeight="61.0" prefWidth="269.0" text="Dashboard : Accountant" textFill="WHITE">
+                            <font>
+                                <Font name="Sitka Display Bold" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <!-- User Information Labels -->
+                <Label fx:id="userName" prefHeight="39.0" prefWidth="334.0" text="Username:" textFill="WHITE">
+                    <font>
+                        <Font name="Sitka Display Bold" size="16.0" />
+                    </font>
+                </Label>
+                <Label fx:id="clockLabel" prefHeight="49.0" prefWidth="328.0" text="Clock" textFill="WHITE">
+                    <font>
+                        <Font name="Sitka Display Bold" size="16.0" />
+                    </font>
+                </Label>
+                <!-- Buttons with CSS styling -->
+                <Button fx:id="generateInvoiceButton" mnemonicParsing="false" onAction="#generateInvoiceButtonOnClick" prefHeight="38.0" prefWidth="328.0" style="-fx-background-color: #e74c3c; -fx-text-fill: #fff; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Generate Invoice">
+                    <font>
+                        <Font name="Sitka Text Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="auditButton" mnemonicParsing="false" onAction="#auditButtonOnClick" prefHeight="41.0" prefWidth="324.0" style="-fx-background-color: #27ae60; -fx-text-fill: #fff; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Audit Report">
+                    <font>
+                        <Font name="Sitka Text Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="payRollsButton" mnemonicParsing="false" onAction="#payRollsButtonOnClick" prefHeight="38.0" prefWidth="323.0" style="-fx-background-color: #f39c12; -fx-text-fill: #fff; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Payroll">
+                    <font>
+                        <Font name="Sitka Text Bold" size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="reimbursementReportButton" mnemonicParsing="false" onAction="#reimbursementReportButtonOnClick" prefHeight="42.0" prefWidth="342.0" style="-fx-background-color: #3498db; -fx-text-fill: #fff; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Reimbursement">
+                    <font>
+                        <Font name="Sitka Text Bold" size="18.0" />
+                    </font>
+                </Button>
+                <!-- Embedded PieChart -->
+                <PieChart fx:id="pieChart" prefHeight="213.0" prefWidth="247.0" />
+            <Button fx:id="logoutt" mnemonicParsing="false" onAction="#logoutClick" prefHeight="27.0" prefWidth="276.0" style="-fx-background-color: transparent; -fx-border-color: #ff0707; -fx-text-fill: #ff0707; -fx-background-radius: 5; -fx-border-radius: 5; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);" text="Logout" textFill="#ff0707">
+               <font>
+                  <Font name="Gadugi Bold" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+    </left>
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab style="-fx-background-color: Yellow;" text="Notifications">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="740.0" prefWidth="475.0">
+                     <children>
+                        <VBox layoutX="6.0" layoutY="6.0" prefHeight="514.0" prefWidth="464.0">
+                           <children>
+                              <HBox prefHeight="128.0" prefWidth="464.0">
+                                 <children>
+                                    <HBox prefHeight="123.0" prefWidth="232.0" style="-fx-background-color: purple; -fx-background-radius: 37;">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Label>
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="55.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Icons/giphy.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="123.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="31.0" prefWidth="181.0" text="Reimbursement requests" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="reimreqcount" prefHeight="94.0" prefWidth="155.0" text="0000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Lucida Sans Demibold" size="51.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <Label prefHeight="17.0" prefWidth="27.0" />
+                                    <HBox prefHeight="123.0" prefWidth="232.0" style="-fx-background-color: purple; -fx-background-radius: 37;">
+                                       <children>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <Label>
+                                                   <font>
+                                                      <Font size="25.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="55.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../Icons/giphy.gif" />
+                                                   </image>
+                                                </ImageView>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="123.0" prefWidth="172.0">
+                                             <children>
+                                                <Label prefHeight="31.0" prefWidth="181.0" text="Audits count" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="13.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="auditreportCount" prefHeight="94.0" prefWidth="155.0" text="0000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="Lucida Sans Demibold" size="51.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <Label prefHeight="17.0" prefWidth="573.0" />
+                              <HBox prefHeight="104.0" prefWidth="464.0" />
+                              <Label text="Tax Rate" />
+                              <LineChart fx:id="taxrateLineChart" prefHeight="225.0" prefWidth="464.0">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                           </children>
+                        </VBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="128.0" prefWidth="464.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-background-color: aqua;" text="Tax updates">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab style="-fx-background-color: gray;" text="Vacations">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab style="-fx-background-color: #5b77bf;" text="Budgeting">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab style="-fx-background-color: red;" text="Record keeping">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

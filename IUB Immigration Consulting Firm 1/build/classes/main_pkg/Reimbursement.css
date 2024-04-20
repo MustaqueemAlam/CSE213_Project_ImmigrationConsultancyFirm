@@ -1,0 +1,55 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 10, 2024, 1:33:01 AM
+    Author     : Mustaqueem Alam
+*/
+
+/* styles.css */
+
+#AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #F0F8FF, #bc310e);
+}
+
+#RequestReimbursementDataTableView {
+    -fx-background-color: #ffffff; /* Table background color */
+    -fx-border-color: #000000; /* Table border color */
+}
+
+#nameColumn, #amountColumn, #paymentMethodColumn, #expenseTypeColumn, #reqDateColumn, #designationColumn {
+    -fx-background-color: #6495ED; /* Header background color */
+    -fx-text-fill: #ffffff; /* Header text color */
+}
+
+#RequestReimbursementDataTableView .column-header-background {
+    -fx-background-color: #6495ED; /* Table header background color */
+}
+
+#RequestReimbursementDataTableView .column-header {
+    -fx-background-color: transparent; /* Remove column header background color */
+}
+
+#RequestReimbursementDataTableView .table-cell {
+    -fx-background-color: #E6E6FA; /* Table cell background color */
+    -fx-text-fill: #000000; /* Table cell text color */
+}
+
+#RequestReimbursementDataTableView .table-row-cell {
+    -fx-background-color: #FFFFFF; /* Table row background color */
+}
+
+#RequestReimbursementDataTableView .table-row-cell:selected {
+    -fx-background-color: #ADD8E6; /* Selected row background color */
+}
+
+#RequestReimbursementDataTableView .table-row-cell:odd {
+    -fx-background-color: #F0F8FF; /* Alternate row background color */
+}
+
+#saveTAbleviewContentAsPDFOnCLick {
+    -fx-background-radius: 5;
+    -fx-background-color: #4CAF50; /* Button background color */
+    -fx-text-fill: #ffffff; /* Button text color */
+}

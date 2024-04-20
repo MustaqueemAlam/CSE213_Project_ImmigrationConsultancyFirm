@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_06_VisaProcessingForClientsController">
+    <ComboBox fx:id="visaTypeComboBox" layoutX="136.0" layoutY="234.0" prefWidth="200" promptText="VISA TYPE">
+    </ComboBox>
+    
+    <Label layoutX="21.0" layoutY="101.0" text="Client Name:" />
+    <TextField fx:id="clientNameTExtFeild" layoutX="136.0" layoutY="97.0" prefWidth="200" />
+    
+    <Label layoutX="21.0" layoutY="144.0" text="Client Contact Info:" />
+    <TextField fx:id="clientContactInfo" layoutX="136.0" layoutY="140.0" prefWidth="200" />
+    
+    <Label layoutX="21.0" layoutY="190.0" text="Date of Applying:" />
+    <DatePicker fx:id="dateOfApplyingDatePicker" layoutX="136.0" layoutY="186.0" prefWidth="200">
+    </DatePicker>
+    
+    <TextArea fx:id="display1" layoutX="402.0" layoutY="96.0" prefHeight="206.0" prefWidth="313.0" />
+    
+    <Button layoutX="477.0" layoutY="385.0" onAction="#submitRecordsToDocManagerOnCLick" prefHeight="36.0" prefWidth="238.0" text="Submit records to Document Manager" />
+   <ComboBox fx:id="PreferredCountryComboBox" layoutX="136.0" layoutY="278.0" prefHeight="25.0" prefWidth="200.0" promptText="Preferred Country" />
+   <RadioButton fx:id="hasInsuranceRadioButton" layoutX="203.0" layoutY="329.0" mnemonicParsing="false"  text="yes" />
+   <RadioButton fx:id="DontHaveInsuranceRadioButton" layoutX="319.0" layoutY="329.0" mnemonicParsing="false"  text="no" />
+   <Label layoutX="27.0" layoutY="329.0" text="Health and Travel Insurance:" />
+   <Label layoutX="27.0" layoutY="470.0" text="Applicants need to consider the processing time for the visa. It's advisable to apply well in advance of the intended travel date." textFill="RED" underline="true" />
+   <Label layoutX="27.0" layoutY="363.0" text="Proof of enrollment: " />
+   <Label layoutX="27.0" layoutY="394.0" text="Financial Proof:" />
+   <Label layoutX="28.0" layoutY="421.0" text="Visa Application Form: " />
+   <Label layoutX="27.0" layoutY="446.0" text="Applicants need to complete and submit the required visa application form to consultant via email.." textFill="#ff1313" underline="true" />
+   <RadioButton fx:id="enrollmentProofGivenRadioButton" layoutX="203.0" layoutY="363.0" mnemonicParsing="false"  text="given" />
+   <RadioButton fx:id="financialProofgivenRadioBUtton" layoutX="203.0" layoutY="394.0" mnemonicParsing="false"  text="provided" />
+   <RadioButton fx:id="visaApplicationFormRecievedRadioButton" layoutX="203.0" layoutY="421.0" mnemonicParsing="false"  text="recieved" />
+   <RadioButton fx:id="visaApplicationFormNotRecievedRadioButton" layoutX="318.0" layoutY="421.0" mnemonicParsing="false" text="not recieved" />
+   <RadioButton fx:id="financialProofNotgivenRadioBUtton" layoutX="318.0" layoutY="394.0" mnemonicParsing="false"  text="not provided" />
+   <RadioButton fx:id="enrollmentProofnotGivenRadioButton" layoutX="318.0" layoutY="363.0" mnemonicParsing="false" text="not given" />
+   <Button layoutX="477.0" layoutY="323.0" mnemonicParsing="false" onAction="#addAllDataToTExtArea" prefHeight="36.0" prefWidth="238.0" text="ADD Data to TEXT Area" />
+   <Label layoutX="21.0" layoutY="34.0" prefHeight="17.0" prefWidth="313.0" text="Client Visa Processing: ">
+      <font>
+         <Font name="System Bold Italic" size="23.0" />
+      </font>
+   </Label>
+</AnchorPane>

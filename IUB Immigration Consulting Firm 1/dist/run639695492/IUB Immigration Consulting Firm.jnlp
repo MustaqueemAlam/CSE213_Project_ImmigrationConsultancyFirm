@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="IUB Immigration Consulting Firm.jnlp">
+  <information>
+    <title>IUB Immigration Consulting Firm</title>
+    <vendor>Messi</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\barcodes-7.1.15-javadoc.jar" size="193129" download="eager" />
+    <jar href="lib\barcodes-7.1.15-sources.jar" size="149710" download="eager" />
+    <jar href="lib\barcodes-7.1.15.jar" size="150644" download="eager" />
+    <jar href="lib\font-asian-7.1.15.jar" size="2166123" download="eager" />
+    <jar href="lib\forms-7.1.15-javadoc.jar" size="311578" download="eager" />
+    <jar href="lib\forms-7.1.15-sources.jar" size="139824" download="eager" />
+    <jar href="lib\forms-7.1.15.jar" size="136612" download="eager" />
+    <jar href="lib\hyph-7.1.15 (1).jar" size="982956" download="eager" />
+    <jar href="lib\hyph-7.1.15.jar" size="982956" download="eager" />
+    <jar href="lib\io-7.0.0.jar" size="627553" download="eager" />
+    <jar href="lib\io-7.0.8.jar" size="796429" download="eager" />
+    <jar href="lib\io-7.1.15-javadoc.jar" size="1279147" download="eager" />
+    <jar href="lib\io-7.1.15-sources.jar" size="646612" download="eager" />
+    <jar href="lib\io-7.1.15.jar" size="822964" download="eager" />
+    <jar href="lib\kernel-7.0.0.jar" size="967008" download="eager" />
+    <jar href="lib\kernel-7.0.8 (1).jar" size="1069304" download="eager" />
+    <jar href="lib\kernel-7.0.8.jar" size="1069304" download="eager" />
+    <jar href="lib\kernel-7.1.15 (1).jar" size="1227067" download="eager" />
+    <jar href="lib\kernel-7.1.15-javadoc.jar" size="322" download="eager" />
+    <jar href="lib\kernel-7.1.15-sources.jar" size="1288979" download="eager" />
+    <jar href="lib\kernel-7.1.15.jar" size="1227067" download="eager" />
+    <jar href="lib\layout-7.0.0.jar" size="220351" download="eager" />
+    <jar href="lib\layout-7.1.15-javadoc.jar" size="322" download="eager" />
+    <jar href="lib\layout-7.1.15-sources.jar" size="539070" download="eager" />
+    <jar href="lib\layout-7.1.15.jar" size="532475" download="eager" />
+    <jar href="lib\pdfa-7.1.15-javadoc.jar" size="121512" download="eager" />
+    <jar href="lib\pdfa-7.1.15-sources.jar" size="48732" download="eager" />
+    <jar href="lib\pdfa-7.1.15.jar" size="55780" download="eager" />
+    <jar href="lib\pdftest-7.1.15-javadoc.jar" size="139988" download="eager" />
+    <jar href="lib\pdftest-7.1.15-sources.jar" size="40414" download="eager" />
+    <jar href="lib\pdftest-7.1.15.jar" size="30696" download="eager" />
+    <jar href="lib\sign-7.1.15-javadoc.jar" size="332187" download="eager" />
+    <jar href="lib\sign-7.1.15-sources.jar" size="131567" download="eager" />
+    <jar href="lib\sign-7.1.15.jar" size="128969" download="eager" />
+    <jar href="lib\slf4j-api-1.7.13.jar" size="33088" download="eager" />
+    <jar href="lib\slf4j-api-1.7.2.jar" size="26083" download="eager" />
+    <jar href="lib\styled-xml-parser-7.1.15-javadoc.jar" size="322" download="eager" />
+    <jar href="lib\styled-xml-parser-7.1.15-sources.jar" size="522806" download="eager" />
+    <jar href="lib\styled-xml-parser-7.1.15.jar" size="557143" download="eager" />
+    <jar href="lib\svg-7.1.15-javadoc.jar" size="612104" download="eager" />
+    <jar href="lib\svg-7.1.15-sources.jar" size="206484" download="eager" />
+    <jar href="lib\svg-7.1.15.jar" size="166733" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="main_pkg.Main_File"  name="IUB Immigration Consulting Firm" />
+  <update check="always"/>
+</jnlp>

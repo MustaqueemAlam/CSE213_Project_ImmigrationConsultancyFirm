@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="735.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_02_DashboardWelcomeScreenController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="763.0" layoutX="-4.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Background_Image/Paralegal_vs._Lawyer.jpeg.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

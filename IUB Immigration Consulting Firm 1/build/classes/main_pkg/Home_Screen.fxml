@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="750.0" style="-fx-background-color: #3498db;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.Home_ScreenController">
+    <children>
+
+
+        <ImageView fitHeight="170.0" fitWidth="196.0" layoutX="460.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../dashboards/immigrants-are-essential-workers-immigrants-are-essential.gif" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="370.0" fitWidth="297.0" layoutX="29.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../dashboards/immigrants-are-essential-essential.gif" />
+            </image>
+        </ImageView>
+        <Label layoutX="177.0" layoutY="110.0" prefHeight="59.0" prefWidth="509.0" text="Welcome to our firm" textFill="WHITE">
+            <font>
+                <Font name="Serif Bold" size="52.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="108.0" fitWidth="125.0" layoutX="58.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icons/wired-gradient-63-home.gif" />
+            </image>
+        </ImageView>
+      <Button cache="true" layoutX="375.0" layoutY="391.0" mnemonicParsing="false" onAction="#NextButtonOnClick" opacity="0.75" prefHeight="115.0" prefWidth="324.0" style="&#10;                -fx-cursor: hand; /* Cursor style */&#10;            " text="Explore more" textAlignment="CENTER">
+         <font>
+            <Font name="Lucida Sans Demibold" size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0457c7" />
+                  <Stop color="#c30f0f" offset="0.9923371647509578" />
+                  <Stop color="#c30f0f" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+    </children>
+</AnchorPane>

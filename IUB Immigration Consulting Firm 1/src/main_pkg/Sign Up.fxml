@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.SignUpController">
+   <children>
+      <Label layoutX="316.0" layoutY="153.0" prefHeight="18.0" prefWidth="67.0" text="Full Name">
+         <font>
+            <Font name="Sitka Banner Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5f835" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="316.0" layoutY="179.0" prefHeight="17.0" prefWidth="96.0" text="User Name">
+         <font>
+            <Font name="Sitka Banner Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5f835" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="316.0" layoutY="205.0" prefHeight="18.0" prefWidth="117.0" text="Phone Number">
+         <font>
+            <Font name="Sitka Banner Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5f835" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="316.0" layoutY="227.0" prefHeight="17.0" prefWidth="96.0" text="Date Of Birth">
+         <font>
+            <Font name="Sitka Banner Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5f835" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="316.0" layoutY="255.0" prefHeight="17.0" prefWidth="106.0" text="New Password">
+         <font>
+            <Font name="Sitka Banner Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5f835" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="316.0" layoutY="280.0" prefHeight="18.0" prefWidth="125.0" text="Confirm Password">
+         <font>
+            <Font name="Sitka Banner Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5f835" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="313.0" layoutY="99.0" prefHeight="49.0" prefWidth="288.0" text="Register New Account">
+         <font>
+            <Font name="Sitka Heading" size="28.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#311b97" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="signup" layoutX="316.0" layoutY="339.0" mnemonicParsing="false" onAction="#createAccountButtonOnClick" prefHeight="29.0" prefWidth="288.0" style="-fx-background-color: Red;" text="Create New Account" textFill="#67ff26de">
+         <font>
+            <Font name="Sitka Banner Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="goback" layoutX="33.0" layoutY="436.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" prefHeight="42.0" prefWidth="173.0" text="Go Back">
+         <font>
+            <Font name="SimSun" size="19.0" />
+         </font></Button>
+      <Label layoutX="316.0" layoutY="306.0" text="User Type">
+         <font>
+            <Font name="Sitka Banner Bold" size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#e5f835" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <VBox layoutX="451.0" layoutY="148.0" prefHeight="205.0" prefWidth="149.0">
+         <children>
+            <TextField fx:id="newNameTextField" opacity="0.74" />
+            <TextField fx:id="newUserNameTextField" opacity="0.74" />
+            <TextField fx:id="newUserPhoneNumberTextField" opacity="0.74" />
+            <DatePicker fx:id="newUserDob" opacity="0.74" prefHeight="25.0" prefWidth="149.0" />
+            <TextField fx:id="newPasswordTextField" opacity="0.74" />
+            <TextField fx:id="confirmPasswordTextField" opacity="0.74" />
+            <ComboBox fx:id="userTypeComboBox" prefHeight="27.0" prefWidth="152.0" promptText="Register as:" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="266.0" fitWidth="270.0" layoutX="33.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../dashboards/immigrant-immigration.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

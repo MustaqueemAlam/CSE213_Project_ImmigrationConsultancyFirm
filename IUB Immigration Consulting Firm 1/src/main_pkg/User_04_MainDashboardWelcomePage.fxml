@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="750.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_04_MainDashboardWelcomePageController">
+   <children>
+      <ImageView fitHeight="530.0" fitWidth="750.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Background_Image/62a8c24b662e7f6faf186d37_hero-document-management-systems-part.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="442.0" prefHeight="45.0" prefWidth="283.0" text="Application designed by FXML Explorers" textFill="#ff0b0b" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="95.0" prefHeight="36.0" prefWidth="750.0" style="-fx-background-color: silver;" text="                                           Logged in as: Document Manager" textFill="#2b06ff">
+         <font>
+            <Font name="Cambria Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

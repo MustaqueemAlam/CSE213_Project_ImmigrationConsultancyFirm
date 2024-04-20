@@ -1,0 +1,14 @@
+/* styles.css */
+
+.button {
+    -fx-background-color: white;
+    -fx-background-radius: 88;
+}
+
+.button:hover {
+    -fx-background-color: #f2f2f2; /* Change color on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #d9d9d9; /* Change color when pressed */
+}

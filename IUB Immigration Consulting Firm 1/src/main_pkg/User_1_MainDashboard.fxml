@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_1_MainDashboardController">
+   <bottom>
+      <ButtonBar prefHeight="29.0" prefWidth="630.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <buttons>
+            <Label fx:id="userName" prefHeight="17.0" prefWidth="283.0" text="User Name:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="clockLabel" prefHeight="17.0" prefWidth="335.0" text="Clock:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="logout" minWidth="-Infinity" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" text="Logout">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </buttons>
+      </ButtonBar>
+   </bottom>
+   <top>
+      <MenuBar style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Action">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#staffAttendence" text="Staff Attendance" />
+                  <MenuItem mnemonicParsing="false" onAction="#outsidersAttendanceOnClick" text="Outsiders Attendance" />
+                  <MenuItem mnemonicParsing="false" onAction="#additionalDutyHoursOnClick" text="Additional Duty Hours" />
+              <MenuItem mnemonicParsing="false" onAction="#createAppoinment" text="Create Appoinment" />
+                  <MenuItem mnemonicParsing="false" onAction="#ShowCaseAssignmentAppointmentstoClientoNcLICK" text="Show Case Assignment Appointments" />
+                  <MenuItem mnemonicParsing="false" onAction="#RequestReimursementforPaymentOnCLick" text="Request Reimbursement for Payment " />
+                  <MenuItem mnemonicParsing="false" onAction="#ViewTermsPolicy" text="View Terms &amp; Policy" />
+                  <MenuItem mnemonicParsing="false" text="Goal 8" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Nevigator">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#navigateToDashboard" text="Back" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

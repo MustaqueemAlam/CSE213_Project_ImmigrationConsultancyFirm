@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="734.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_05_UploadDocumentController">
+   <children>
+      <VBox layoutX="175.0" layoutY="75.0" prefHeight="402.0" prefWidth="464.0" style="-fx-border-color: black;">
+         <children>
+            <Label prefHeight="34.0" prefWidth="472.0" text="Name">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" prefHeight="34.0" prefWidth="457.0" promptText="Full name.." />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="472.0" text="Passport/NID No:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passandnidnoTextField" layoutX="10.0" layoutY="44.0" prefHeight="39.0" prefWidth="457.0" promptText="Anyone.." />
+            <Label layoutX="10.0" layoutY="69.0" prefHeight="34.0" prefWidth="472.0" text="Phone Number">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneTextField" layoutX="10.0" layoutY="103.0" prefHeight="39.0" prefWidth="457.0" promptText="+88" />
+            <Label layoutX="10.0" layoutY="128.0" prefHeight="34.0" prefWidth="472.0" text="Email;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailTextField" layoutX="10.0" layoutY="162.0" prefHeight="32.0" prefWidth="457.0" />
+            <Label layoutX="10.0" layoutY="187.0" prefHeight="34.0" prefWidth="472.0" text="Address">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressTextField" layoutX="10.0" layoutY="221.0" prefHeight="43.0" prefWidth="462.0" />
+            <Button mnemonicParsing="false" onAction="#savsanduploadButtonOnClick" prefHeight="37.0" prefWidth="463.0" text="Save Records">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="139.0" layoutY="21.0" prefHeight="34.0" prefWidth="485.0" text="Upload Document to Consultant" textFill="#a11313">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="39.0" layoutY="75.0" prefHeight="309.0" prefWidth="100.0" style="-fx-border-color: Blue;">
+         <children>
+            <Label prefHeight="43.0" prefWidth="98.0" text="  Gender">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="maleradioButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="Male" />
+            <RadioButton fx:id="femaleradioButton" layoutX="11.0" layoutY="54.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="Female" />
+            <RadioButton fx:id="otherradioButton" layoutX="11.0" layoutY="96.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="Others" />
+            <Label layoutX="11.0" layoutY="11.0" prefHeight="43.0" prefWidth="98.0" text="Client Type">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="studentradioButton" layoutX="11.0" layoutY="54.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="Student" />
+            <RadioButton fx:id="professionradioButton" layoutX="11.0" layoutY="223.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="98.0" text="Profession" />
+         </children>
+      </VBox>
+      <Button layoutX="38.0" layoutY="398.0" mnemonicParsing="false" onAction="#uploadDocumentButtonOnClick" prefHeight="79.0" prefWidth="122.0" text="Upload Documnet" />
+   </children>
+</AnchorPane>

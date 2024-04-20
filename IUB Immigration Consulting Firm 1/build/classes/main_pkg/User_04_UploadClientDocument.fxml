@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: linear-gradient(to bottom, #3314cd, #bc310e);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_04_UploadClientDocumentController">
+    <children>
+        <Label layoutX="20.0" layoutY="31.0" text="Upload client documents to database and keep record of entry">
+         <font>
+            <Font name="Segoe Script Bold" size="21.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#cdff29" />
+                  <Stop color="#e4e4e4" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+        <Button layoutX="522.0" layoutY="195.0" onAction="#uploadButtonOnClick" prefHeight="60.0" prefWidth="205.0" text="Upload PDFs Only" textFill="RED">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font></Button>
+        <Label layoutX="18.0" layoutY="93.0" text="Client Information:" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Label>
+        <Label layoutX="20.0" layoutY="144.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+        <TextField fx:id="nameField" layoutX="199.0" layoutY="140.0" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: yellow;" />
+        <Label layoutX="20.0" layoutY="174.0" text="Passport / Identity Number:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+        <TextField fx:id="passportField" layoutX="199.0" layoutY="170.0" prefHeight="25.0" prefWidth="171.0" style="-fx-background-color: yellow;" />
+        <Label layoutX="20.0" layoutY="204.0" text="Document Type:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+        <ComboBox fx:id="documentTypeComboBox" layoutX="129.0" layoutY="200.0" prefHeight="25.0" prefWidth="241.0" promptText="Select Document Type" style="-fx-background-color: yellow;">
+            <items>
+      
+            </items>
+        </ComboBox>
+        <TableView fx:id="documentTable" layoutX="17.0" layoutY="275.0" prefHeight="179.0" prefWidth="716.0" style="-fx-background-color: yellow;">
+            <columns>
+                <TableColumn fx:id="clientNameColumn" prefWidth="200.0" text="Client Name" />
+                <TableColumn fx:id="passportNumberColumn" prefWidth="357.0" text="Document Identity Number of clients" />
+                <TableColumn fx:id="documentTypeColumn" prefWidth="170.0" text="Document Type" />
+            </columns>
+        </TableView>
+      <Label layoutX="20.0" layoutY="486.0" prefHeight="28.0" prefWidth="728.0" text="Note  :   Upload Document saves the uploaded document history in the tableview and upload document to database" textFill="#d8ff59">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="244.0" prefHeight="20.0" prefWidth="241.0" text="Track history of Uploaded Documents :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="170.0" prefHeight="25.0" prefWidth="205.0" text="Please select valid Documents only" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnBackTODashboard" layoutX="516.0" layoutY="96.0" mnemonicParsing="false" onAction="#backToDashboardOnClick" prefHeight="30.0" prefWidth="205.0" style="-fx-background-radius: 88; -fx-background-color: white;" text="Return back to your dashboard" textFill="#ff0d0d">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="18.0" layoutY="469.0" prefHeight="17.0" prefWidth="704.0" text="Folder path for Uploading PDFs is written in DocumentManager.java in uploadDocumentAndAddInfo method." textFill="#d8ff59" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

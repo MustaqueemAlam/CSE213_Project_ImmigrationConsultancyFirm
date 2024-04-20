@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="536.0" minWidth="747.0" prefHeight="536.0" prefWidth="747.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_05_UniversityListController">
+    <VBox layoutX="45.0" layoutY="144.0" prefHeight="134.0" prefWidth="91.0" spacing="10.0">
+        <Label text="Select Country:" />
+        <RadioButton fx:id="ukRadioButton" text="UK" />
+        <RadioButton fx:id="usaRadioButton" text="USA" />
+        <RadioButton fx:id="canadaRadioButton" text="Canada" />
+    </VBox>
+   <Label layoutX="211.0" layoutY="14.0" prefHeight="55.0" prefWidth="398.0" text="University List As-per requirements" textFill="#801b1b">
+      <font>
+         <Font name="Britannic Bold" size="24.0" />
+      </font>
+   </Label>
+   <Line endX="19.0" endY="484.0" layoutX="180.0" layoutY="73.0" startX="10.0" startY="-73.0" />
+   <Button layoutX="20.0" layoutY="450.0" mnemonicParsing="false" onAction="#acceptanceButtonOnClick" prefHeight="55.0" prefWidth="130.0" text="Acceptance rate" />
+   <TableView fx:id="tableview" layoutX="255.0" layoutY="76.0" prefHeight="173.0" prefWidth="398.0">
+     <columns>
+       <TableColumn fx:id="universityNameColumn" prefWidth="233.0" text="University Name" />
+       <TableColumn fx:id="ieltsColumn" minWidth="0.0" prefWidth="88.0" text="IELTS" />
+         <TableColumn fx:id="greColumn" minWidth="0.0" prefWidth="76.0" text="GRE" />
+     </columns>
+   </TableView>
+   <BarChart fx:id="barChart" layoutX="211.0" layoutY="284.0" prefHeight="184.0" prefWidth="398.0">
+     <xAxis>
+       <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+     </xAxis>
+     <yAxis>
+       <NumberAxis fx:id="yAxis" side="LEFT" />
+     </yAxis>
+   </BarChart>
+   <Label layoutX="339.0" layoutY="256.0" prefHeight="17.0" prefWidth="166.0" text="Acceptance Rate %" textFill="#9a2121">
+      <font>
+         <Font name="Bernard MT Condensed" size="18.0" />
+      </font>
+   </Label>
+   <Button layoutX="20.0" layoutY="376.0" mnemonicParsing="false" onAction="#detailButtonOnClick" prefHeight="55.0" prefWidth="130.0" text="Show Details" />
+</AnchorPane>

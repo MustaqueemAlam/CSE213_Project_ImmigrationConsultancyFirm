@@ -1,0 +1,13 @@
+Bill Summary
+
+Name: ASAD
+City: CTG
+Due Date: 2023-08-17
+Contact: 01233444444
+
+Service Type: Translation Services (Quantity: 1)
+Unit Price: 1200.0
+VAT Rate: 1.0%
+Gross Total: 1212.0 BDT
+
+Total Payable: 1212.0 BDT

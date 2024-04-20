@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="478.0" prefWidth="749.0" style="-fx-background-color: Aqua;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_01_TakeOutsidersAttendanceController">
+
+    <Label layoutX="240.0" layoutY="24.0" prefHeight="43.0" prefWidth="295.0" text="Non Employee Attendance" textFill="#ff0202">
+      <font>
+         <Font name="System Bold Italic" size="23.0" />
+      </font></Label>
+
+    <Label layoutX="73.0" layoutY="106.0" text="Name:" />
+    <TextField fx:id="nameTextField" layoutX="187.0" layoutY="102.0" prefWidth="200" />
+
+    <Label layoutX="70.0" layoutY="149.0" text="Reason for Visiting:" />
+    <ComboBox fx:id="reasonComboBox" layoutX="187.0" layoutY="145.0" prefWidth="200" promptText="Select a Reason">
+    </ComboBox>
+
+    <Label layoutX="70.0" layoutY="190.0" text="Phone Number:" />
+    <TextField fx:id="phoneNumberTextField" layoutX="187.0" layoutY="190.0" prefWidth="200" />
+
+    <Label layoutX="70.0" layoutY="236.0" text="Profession:" />
+    <ComboBox fx:id="professionComboBox" layoutX="187.0" layoutY="232.0" prefWidth="200" promptText="Select a Profession">
+    </ComboBox>
+
+    <DatePicker fx:id="datePicker" layoutX="188.0" layoutY="324.0" prefHeight="25.0" prefWidth="200.0" />
+
+    <Label layoutX="68.0" layoutY="282.0" text="Check-In Time:" />
+    <TextField fx:id="checkInTextField" layoutX="187.0" layoutY="278.0" prefHeight="25.0" prefWidth="200.0" />
+
+    <Button layoutX="521.0" layoutY="402.0" onAction="#submitToDocMAnagerOnClick" prefHeight="43.0" prefWidth="200.0" text="Save">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font></Button>
+   <Label layoutX="70.0" layoutY="328.0" prefHeight="17.0" prefWidth="79.0" text="Date" />
+   <Line endX="594.0" layoutX="124.0" layoutY="67.0" startX="-100.0" />
+   <TextArea fx:id="TextArea" editable="false" layoutX="406.0" layoutY="99.0" prefHeight="252.0" prefWidth="315.0" promptText="Load Information to Check" style="-fx-border-color: Black;" wrapText="true">
+      <font>
+         <Font size="20.0" />
+      </font></TextArea>
+   <Button layoutX="187.0" layoutY="375.0" mnemonicParsing="false" onAction="#loadInformationButtonOnClick" prefHeight="32.0" prefWidth="200.0" text="Load Information">
+      <font>
+         <Font size="16.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+</AnchorPane>

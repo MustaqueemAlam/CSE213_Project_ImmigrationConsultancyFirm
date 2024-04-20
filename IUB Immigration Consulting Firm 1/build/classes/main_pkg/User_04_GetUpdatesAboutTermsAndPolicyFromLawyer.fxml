@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrollPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_04_GetUpdatesAboutTermsAndPolicyFromLawyerController">
+    <content>
+        <AnchorPane id="AnchorPane" prefHeight="712.0" prefWidth="978.0" style="-fx-background-color: linear-gradient(to bottom, #3314cd, #bc310e);">
+       <children>
+          <Label layoutX="21.0" layoutY="47.0" text="Introduction" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="17.0" layoutY="132.0" text="Scope of Services" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="15.0" layoutY="210.0" text="Client Responsibilities" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="12.0" layoutY="303.0" text="Fees and Payments" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="11.0" layoutY="390.0" text="Privacy and Confidentiality" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="14.0" />
+             </font></Label>
+          <Label layoutX="11.0" layoutY="478.0" text="Communication" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="13.0" layoutY="564.0" text="Limitations of Services" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="13.0" layoutY="635.0" text="Government Regulations" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="506.0" layoutY="85.0" text="Cancellation and Termination" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="506.0" layoutY="149.0" text="Dispute Resolution" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="509.0" layoutY="210.0" text="Intellectual Property" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="506.0" layoutY="286.0" text="Legal Liability" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="503.0" layoutY="355.0" text="Governing Law" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="503.0" layoutY="427.0" text="Changes to Terms" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="501.0" layoutY="487.0" text="Acceptance of Terms" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <Label layoutX="502.0" layoutY="564.0" text="Contact Information" textFill="#d4ff28">
+             <font>
+                <Font name="Sitka Banner Bold" size="15.0" />
+             </font></Label>
+          <TextArea fx:id="introductionTextArea" layoutX="157.0" layoutY="12.0" prefHeight="82.0" prefWidth="322.0" style="-fx-background-color: red;" />
+          <TextArea fx:id="scopeOfServicesTextArea" layoutX="157.0" layoutY="97.0" prefHeight="83.0" prefWidth="322.0" style="-fx-background-color: blue; -fx-background-radius: 66;" />
+          <TextArea fx:id="ClientResponsibilitiesTextArea" layoutX="158.0" layoutY="183.0" prefHeight="86.0" prefWidth="322.0" style="-fx-background-color: red;" />
+          <TextArea fx:id="FeesAndPaymentTextArea" layoutX="157.0" layoutY="271.0" prefHeight="81.0" prefWidth="322.0" style="-fx-background-color: blue; -fx-background-radius: 66;" />
+          <TextArea fx:id="privacyAndConfidentialityTextArea" layoutX="167.0" layoutY="355.0" prefHeight="86.0" prefWidth="312.0" style="-fx-background-color: red;" />
+          <TextArea fx:id="communicationTextArea" layoutX="158.0" layoutY="442.0" prefHeight="85.0" prefWidth="322.0" style="-fx-background-color: blue; -fx-background-radius: 66;" />
+          <TextArea fx:id="limitationsOfServicesTextArea" layoutX="157.0" layoutY="529.0" prefHeight="85.0" prefWidth="322.0" style="-fx-background-color: red;" />
+          <TextArea fx:id="govRegulationsTextArea" layoutX="167.0" layoutY="616.0" prefHeight="69.0" prefWidth="312.0" style="-fx-background-color: blue; -fx-background-radius: 66;" />
+          <Label layoutX="488.0" layoutY="4.0" prefHeight="59.0" prefWidth="476.0" text="Review updates of terms and policy from lawyer" textFill="WHITE" underline="true">
+             <font>
+                <Font name="Cambria Bold Italic" size="22.0" />
+             </font>
+          </Label>
+          <TextArea fx:id="CancellationAndTerminationTextArea" layoutX="693.0" layoutY="63.0" prefHeight="59.0" prefWidth="272.0" style="-fx-background-color: blue; -fx-background-radius: 66;" />
+          <TextArea fx:id="disputeResolution" layoutX="643.0" layoutY="123.0" prefHeight="67.0" prefWidth="322.0" style="-fx-background-color: red;" />
+          <TextArea fx:id="intellectualPropertyTextArea" layoutX="643.0" layoutY="192.0" prefHeight="73.0" prefWidth="322.0" style="-fx-background-color: blue; -fx-background-radius: 66;" />
+          <TextArea fx:id="legaliababilityTExtArea" layoutX="642.0" layoutY="266.0" prefHeight="68.0" prefWidth="322.0" style="-fx-background-color: red;" />
+          <TextArea fx:id="governiingLawTextArea" layoutX="642.0" layoutY="335.0" prefHeight="65.0" prefWidth="322.0" style="-fx-background-color: blue; -fx-background-radius: 66;" />
+          <TextArea fx:id="ChangeToTermsTextArea" layoutX="642.0" layoutY="401.0" prefHeight="65.0" prefWidth="322.0" style="-fx-background-color: red;" />
+          <TextArea fx:id="acceptanceOfTermsTextArea" layoutX="642.0" layoutY="468.0" prefHeight="66.0" prefWidth="322.0" style="-fx-background-color: blue; -fx-background-radius: 66;" />
+          <TextArea fx:id="contactInformationTextArea" layoutX="642.0" layoutY="537.0" prefHeight="69.0" prefWidth="322.0" style="-fx-background-color: red;" />
+          <Label layoutX="528.0" layoutY="660.0" prefHeight="25.0" prefWidth="402.0" text="Loaded from &quot;SendTermsAndPolicyToDocManager.bin&quot;" textFill="WHITE" underline="true">
+            <font>
+               <Font name="System Italic" size="17.0" />
+            </font>
+         </Label>
+      </children>
+   </AnchorPane>
+   </content>
+</ScrollPane>

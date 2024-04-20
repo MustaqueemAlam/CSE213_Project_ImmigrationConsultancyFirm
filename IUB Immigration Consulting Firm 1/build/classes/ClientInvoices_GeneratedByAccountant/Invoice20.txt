@@ -1,0 +1,16 @@
+Invoice generated on: 2023-08-11 17:01:45
+
+Bill Summary
+
+Name: waa
+Phone Number: 01788099999
+City: Dhaka
+
+Due Date: 2023-08-17
+
+Service Type: Case Management Fee (  Quantity:  1)
+
+Rate: 2000.0
+Gross Total: 2100.0
+
+Total Payable: 2100.0 BDT

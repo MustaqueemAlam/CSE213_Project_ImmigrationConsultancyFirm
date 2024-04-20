@@ -1,0 +1,21 @@
+Invoice generated on: 2023-08-24 19:27:27
+
+Bill Summary
+
+Name: Dazz
+Phone Number: 01988777666
+City: Dhaka
+
+Due Date: 2023-08-22
+
+Service Type: Appointment Fee (  Quantity:  2)
+
+Rate: 500.0
+Gross Total: 1030.0
+
+Service Type: Case Management Fee (  Quantity:  1)
+
+Rate: 2000.0
+Gross Total: 2100.0
+
+Total Payable: 3130.0 BDT

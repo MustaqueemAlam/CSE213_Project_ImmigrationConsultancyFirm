@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="525.0" prefWidth="734.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_06_UniversityListReviewController">
+   <children>
+      <Label layoutX="100.0" layoutY="47.0" prefHeight="36.0" prefWidth="534.0" text="University List and Requirements" textFill="#0b34a1">
+         <font>
+            <Font name="Bodoni MT Black" size="30.0" />
+         </font>
+      </Label>
+      <VBox layoutX="160.0" layoutY="100.0" prefHeight="395.0" prefWidth="426.0" style="-fx-background-color: silver;">
+         <children>
+            <Label prefHeight="36.0" prefWidth="545.0" text="                                  University's Name">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="universitynameTextField" prefHeight="35.0" prefWidth="471.0" />
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="545.0" text="                                         Country">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="countrynameTextField" layoutX="10.0" layoutY="46.0" prefHeight="35.0" prefWidth="471.0" />
+            <Label layoutX="10.0" layoutY="81.0" prefHeight="36.0" prefWidth="545.0" text="                                          IELTS">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ieltsTextField" layoutX="10.0" layoutY="117.0" prefHeight="35.0" prefWidth="471.0" />
+            <Label layoutX="10.0" layoutY="152.0" prefHeight="36.0" prefWidth="545.0" text="                                           GRE">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="greTextField" layoutX="10.0" layoutY="188.0" prefHeight="35.0" prefWidth="471.0" />
+            <Label layoutX="10.0" layoutY="223.0" prefHeight="36.0" prefWidth="545.0" text="                                  Acceptance rate%">
+               <font>
+                  <Font name="Bell MT Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="acceptanceTextField" layoutX="10.0" layoutY="259.0" prefHeight="35.0" prefWidth="471.0" />
+            <Button mnemonicParsing="false" onAction="#savefileButtonOnClick" prefHeight="34.0" prefWidth="426.0" text="Save as file" textFill="#060607">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="38.0" layoutY="191.0" prefHeight="143.0" prefWidth="100.0">
+         <children>
+            <RadioButton fx:id="ukradioButton" mnemonicParsing="false" prefHeight="47.0" prefWidth="108.0" text="UK" />
+            <RadioButton fx:id="usaradioButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="108.0" text="USA" />
+            <RadioButton fx:id="canadaradioButton" layoutX="10.0" layoutY="57.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="108.0" text="Canada" />
+         </children>
+      </VBox>
+      <Line endX="244.5" layoutX="370.0" layoutY="91.0" startX="-281.5" />
+   </children>
+</AnchorPane>

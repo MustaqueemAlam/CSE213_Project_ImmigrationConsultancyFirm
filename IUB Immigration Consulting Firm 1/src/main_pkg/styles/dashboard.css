@@ -1,0 +1,22 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 9, 2024, 7:53:57 PM
+    Author     : Mustaqueem Alam
+*/
+
+#pieChart {
+    -fx-pie-chart-label-line-length: 20;
+    -fx-pie-chart-label-line-spacing: 10;
+    -fx-pie-chart-label-visible: true;
+    -fx-pie-chart-label-fill: white;
+    -fx-pie-chart-label-strikethrough-line-visible: false;
+    -fx-pie-chart-label-strikethrough-line-type: outside;
+    -fx-pie-chart-label-strikethrough-line-width: 1;
+    -fx-pie-chart-start-angle: 180;
+    -fx-pie-chart-legend-side: right;
+    -fx-pie-chart-legend-visible: true;
+    -fx-pie-chart-legend-label-pie-min-width: 50;
+}

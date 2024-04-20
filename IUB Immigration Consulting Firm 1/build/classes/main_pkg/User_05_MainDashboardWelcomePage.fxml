@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_pkg.User_05_MainDashboardWelcomePageController">
+   <children>
+      <ImageView fitHeight="378.0" fitWidth="720.0" layoutX="14.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Background_Image/06e087e9de3e1303c72090365df1711d.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="196.0" layoutY="26.0" prefHeight="45.0" prefWidth="314.0" text="Welcome To the Client Dashboard">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="387.0" prefHeight="21.0" prefWidth="168.0" style="-fx-background-color: white;" text="Email: consultancy@gmail.com">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="408.0" prefHeight="15.0" prefWidth="151.0" style="-fx-background-color: white;" text="Phone:+02 8889903(Tel)">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="128.0" prefHeight="37.0" prefWidth="444.0" text="&quot;Empowering Your Vision, Enriching Your Future&quot;">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="71.0" prefHeight="37.0" prefWidth="397.0" style="-fx-border-color: Black;" text="&quot;Please choose a task from the options above&quot;" textFill="#b90b0b">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
